@@ -1,0 +1,301 @@
+@font-face {
+    font-family: lucida-bright;
+    src: url('../fonts/LBRITE.TTF');
+}
+@font-face {
+    font-family: lucida-bright-demibold;
+    src: url('../fonts/lucidabrightdemibold.ttf');
+}
+
+body {
+    background-color: #3D2D35;
+    scroll-behavior: smooth;
+    color: #fff;
+    text-align: justify;
+    font-family: 'lucida-bright';
+}
+
+h1 {
+    font-family: 'lucida-bright-demibold';
+    font-size: 24px;
+}
+
+h3{
+    font-family: 'lucida-bright-demibold';
+    font-size: 18px;
+}
+
+p {
+    text-indent: 40px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+}
+
+.banner {
+    background-color: #fff;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+footer {
+    position: relative;
+    background-color: #fff;
+    color: #3D2D35;
+    height: 450px;
+}
+
+footer .upper {
+    display: flex;
+    justify-content: end;
+}
+
+footer .upper img{
+    margin: 50px 50px 0 0;
+    width: 75px;
+}
+
+footer .marked {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    right: 10%;
+}
+
+footer .marked p{
+    text-indent: 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+footer .marked a {
+    color: #E0243A;
+}
+
+@media only screen and (max-width: 600px) {
+    /* banner */
+    .banner .judul-materi {
+        display: flex;
+        justify-content: start;
+    }
+    
+    .judul-materi img {
+        max-width: 100%;
+    }
+    
+    .gambar-saya {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .gambar-saya {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .gambar-saya img {
+        max-width: 90%;
+    }
+    
+    .nama {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .nama img {
+        max-width: 95%;
+    }
+
+    /* body material */
+    .materi-bab-pertama, .materi-bab-kedua, 
+    .materi-bab-ketiga, .materi-bab-keempat{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .materi-bab-pertama p, .materi-bab-kedua p, 
+    .materi-bab-ketiga p, .materi-bab-keempat p{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .bab-1-img img {
+        max-width: 100%;
+    }
+
+    .subbab-1-img {
+        display: flex;
+        justify-content: end;
+        flex-wrap: wrap;
+    }
+
+    .subbab-1-img img {
+        max-width: 90%;
+    }
+    .bab-2-img img {
+        max-width: 90%;
+    }
+
+    .bab-3-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .bab-3-img img {
+        max-width: 90%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    /* banner */
+    .banner .col {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .banner .judul-materi {
+        display: flex;
+        align-items: center;
+    }
+    
+    .judul-materi img {
+        max-width: 500px;
+        max-height: 200px;
+    }
+    
+    .gambar-saya {
+        display: flex;
+        margin-top: 30px;
+    }
+
+    .gambar-saya img {
+        max-width: 340px;
+    }
+    
+    .nama {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .nama img {
+        max-width: 70%;
+    }
+
+    /* body material */
+    .materi-bab-pertama, .materi-bab-kedua, 
+    .materi-bab-ketiga, .materi-bab-keempat{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .materi-bab-pertama p, .materi-bab-kedua p, 
+    .materi-bab-ketiga p, .materi-bab-keempat p{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .bab-1-img img {
+        max-width: 490px;
+    }
+
+    .subbab-1-img {
+        display: flex;
+        justify-content: end;
+        flex-wrap: wrap;
+    }
+
+    .subbab-1-img img {
+        max-width: 430px;
+    }
+    .bab-2-img img {
+        max-width: 450px;
+    }
+
+    .bab-3-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .bab-3-img img {
+        max-width: 50%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .bab-1-img{
+        display: flex;
+        align-items: center;
+    }
+
+    .bab-1-img img {
+        max-width: 45%;
+    }
+
+    .bab-1-img .materi-bab-pertama {
+        margin: 0;
+        padding-right: 11%;
+    }
+
+    .subbab-1-img {
+        align-items: center;
+    }
+
+    .subbab-1-img {
+        display: flex;
+        justify-content: end;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+    }
+
+    .subbab-1-img img {
+        max-width: 45%;
+    }
+
+    .subbab-1-img .materi-bab-pertama {
+        margin: 0;
+        padding-left: 11%;
+        padding-right: 15px;
+    }
+
+    .bab-2-img{
+        display: flex;
+        align-items: center;
+    }
+
+    .bab-2-img img {
+        max-width: 45%;
+    }
+
+    .bab-2-img .materi-bab-kedua {
+        margin: 0;
+        padding-right: 11%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .judul-materi img {
+        max-width: 100%;
+    }
+
+    .gambar-saya img {
+        max-width: 340px;
+    }
+    
+    .nama {
+        margin-top: 0;
+        height: fit-content;
+    }
+
+    .nama img {
+        margin-top: 60px;
+        max-width: 30%;
+    }
+}
